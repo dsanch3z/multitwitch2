@@ -6,7 +6,6 @@ export default function({ children }: { children: any }) {
   return (
     <>
       <Head>
-        <meta http-equiv="content-type" content="text/html" />
         <meta name="language" content="english" />
         <meta
           name="description"

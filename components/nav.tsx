@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import { FeedbackFormPopover } from "./feedback";
 
 const Nav = () => (
   <nav>
@@ -10,7 +11,14 @@ const Nav = () => (
         </Link>
       </li>
       <li>
-        <a href="https://github.com/zeit/next.js">Github</a>
+        <ul>
+          <li>
+            <FeedbackFormPopover />
+          </li>
+          <li>
+            <a href="https://github.com/zeit/next.js">Github</a>
+          </li>
+        </ul>
       </li>
     </ul>
 
