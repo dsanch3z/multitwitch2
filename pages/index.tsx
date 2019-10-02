@@ -78,7 +78,7 @@ const Home: NextPage<HomeProps> = props => {
                   <TabPane key={channel} tab={channel}>
                     <iframe
                       id={`chat:${channel}`}
-                      src={`https://www.twitch.tv/embed/${channel}/chat`}
+                      src={`https://www.twitch.tv/embed/${channel}/chat?darkpopout`}
                       height="100%"
                       width="100%"
                       frameBorder={0}
@@ -89,6 +89,11 @@ const Home: NextPage<HomeProps> = props => {
             )}
           </aside>
         </div>
+        <style global jsx>{`
+          .ant-tabs-content {
+            height: 90%;
+          }
+        `}</style>
 
         <style jsx>{`
           .row {
